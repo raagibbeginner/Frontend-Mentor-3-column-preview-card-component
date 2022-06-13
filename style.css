@@ -1,0 +1,125 @@
+:root {
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+display: grid;
+place-items: center;
+    height: 100vh;
+    background: #F2F2F2;
+}
+
+section {
+    width: 55.5rem;
+    height: 30.1rem;
+    display: flex;
+    margin: 5px;
+}
+
+article {
+    padding: 2.5em;
+}
+
+h2 {
+    color: #fff;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    margin: 0.4em 0 0.4em 0;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+button {
+    margin-top: 4em;
+    padding: 1em 2.5em;
+    border-radius: 50em;
+    border: none;
+}
+
+button:hover {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-1 {
+    color: #e38826;
+}
+
+.btn-2 {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn-3 {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-1:hover {
+    background: hsl(31, 77%, 52%);
+}
+.btn-2:hover {
+    background: hsl(184, 100%, 22%);
+}
+.btn-3:hover {
+    background: hsl(179, 100%, 13%);
+}
+
+article:first-child {
+    background: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+article:last-child {
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+article:nth-child(2) {
+    background: hsl(184, 100%, 22%);
+}
+
+@media screen and (max-width:1200px) {
+    :root {
+        font-size: 12px;
+    }
+
+    button {
+        margin-top: 3em;
+        padding: .8em 1.5em;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    :root {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    
+    section {
+        flex-direction: column;
+        width: 21rem;
+    }
+
+    article:first-child {
+        border-radius: 10px 10px 0 0;
+    }
+
+    article:last-child {
+        border-radius: 0 0 10px 10px;
+    }
+
+}
+
